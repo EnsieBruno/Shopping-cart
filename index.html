@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Carrinho de Compras</title>
+    <link rel="stylesheet" href="style.css" />
+    </head>
+<body>
+
+    <header class="site-header">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="Logotipo da Loja - Shopping Cart" />
+            <h1>Shopping Cart</h1>
+        </div>
+        <nav class="main-nav">
+            </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="products-section" aria-label="Lista de produtos no carrinho">
+            <div class="product-list-header">
+                <span></span> <span>Produto</span>
+                <span>Preço Unitário</span>
+                <span>Quantidade</span>
+                <span>Total Item</span>
+                <span></span> </div>
+
+            <article class="product-item">
+                <figure class="product-image">
+                    <img src="/assets/product1.jpg" alt="Cadeira Gamer XX" />
+                    <figcaption class="product-info">
+                        <h2>Cadeira Gamer XX</h2>
+                        <p>Conforto garantido para suas longas sessões de jogo.</p>
+                    </figcaption>
+                </figure>
+                <span class="product-price" data-label="Preço Unitário">R$ 1.350,00</span>
+                <div class="product-quantity-control">
+                    <button class="quantity-btn decrease-quantity" aria-label="Diminuir quantidade">-</button>
+                    <span class="product-quantity" data-label="Quantidade">2</span>
+                    <button class="quantity-btn increase-quantity" aria-label="Aumentar quantidade">+</button>
+                </div>
+                <span class="product-total" data-label="Total Item">R$ 2.700,00</span>
+                <button class="remove-product-btn" aria-label="Remover Cadeira Gamer XX do carrinho">X</button>
+            </article>
+
+            <article class="product-item">
+                <figure class="product-image">
+                    <img src="/assets/product1.jpg" alt="Teclado Mecânico Pro X" />
+                    <figcaption class="product-info">
+                        <h2>Teclado Mecânico Pro X</h2>
+                        <p>Switches de alta performance e retroiluminação RGB.</p>
+                    </figcaption>
+                </figure>
+                <span class="product-price" data-label="Preço Unitário">R$ 450,00</span>
+                <div class="product-quantity-control">
+                    <button class="quantity-btn decrease-quantity" aria-label="Diminuir quantidade">-</button>
+                    <span class="product-quantity" data-label="Quantidade">1</span>
+                    <button class="quantity-btn increase-quantity" aria-label="Aumentar quantidade">+</button>
+                </div>
+                <span class="product-total" data-label="Total Item">R$ 450,00</span>
+                <button class="remove-product-btn" aria-label="Remover Teclado Mecânico Pro X do carrinho">X</button>
+            </article>
+
+            </section>
+
+        <aside class="summary-section">
+            <h2>Resumo da Compra</h2>
+
+            <div class="summary-details">
+                <p>Você selecionou <strong id="selected-products-count">4 produtos</strong>.</p>
+                <p>Confira abaixo os valores estimados:</p>
+            </div>
+
+            <div class="shipping-info">
+                <label for="cep-input">Calcular Frete:</label>
+                <div class="cep-input-group">
+                    <input type="number" id="cep-input" placeholder="Digite seu CEP" minlength="8" maxlength="8" aria-label="Digite seu CEP para calcular o frete"/>
+                    <button class="search-cep-btn" title="Buscar endereço pelo CEP" aria-label="Buscar endereço"><span role="img" aria-label="Lupa de busca">🔍</span></button>
+                </div>
+            </div>
+
+            <div class="order-totals">
+                <p>Subtotal: <strong id="subtotal-value">R$ 8.100,00</strong></p>
+                <p>Frete: <strong id="shipping-value">R$ 50,00</strong></p>
+                <p class="total-value">Total: <strong id="total-order-value">R$ 8.150,00</strong></p>
+            </div>
+
+            <button class="checkout-btn">Finalizar Compra</button>
+        </aside>
+    </main>
+
+    <footer class="site-footer">
+        <address class="footer-address">
+            Endereço <br />
+            R. XV de Novembro, 233 - Edifício Solar
+        </address>
+        <div class="footer-links">
+            <a href="#" aria-label="Página Quem somos">Quem somos</a>
+            <a href="#" aria-label="Página de Contato">Contatos</a>
+        </div>
+        </footer>
+
+</body>
+</html>
